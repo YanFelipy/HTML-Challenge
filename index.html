@@ -10,47 +10,82 @@
     <title>Desafio HTML - Tags</title>
 </head>
 <body>
+
+    <!-- HEADER -->
     <header>
+
+            <!-- NAVIGATION -->
       <nav class="nav-titles">
-        <a href="#">
+        <a href="#inicio">
             <h3>DESAFIO 
-                <span>
-                    HTML
-                </span>
+                <abbr>
+                    <span>
+                        HTML
+                    </span>
+                </abbr>
             </h3>
         </a>
 <ul>
     <li><a href="#titulos">Títulos</a></li>
     <li><a href="#paragrafos">Parágrafos</a></li>
+        <li><a href="#listas">Listas</a></li>
     <li><a href="#titulos">Formatação de texto</a></li>
      
 </ul>
       </nav>
+
     </header>
-    <main>
+
+             <!-- HOME / INTRO -->
+    <main id="inicio">
         <div class="intro">
             <div class="box_image_and_text">
                 <svg  class="html-svg" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6 28L4 3H28L26 28L16 31L6 28Z" fill="#E44D26"></path> <path d="M26 5H16V29.5L24 27L26 5Z" fill="#F16529"></path> <path d="M9.5 17.5L8.5 8H24L23.5 11H11.5L12 14.5H23L22 24L16 26L10 24L9.5 19H12.5L13 21.5L16 22.5L19 21.5L19.5 17.5H9.5Z" fill="white"></path> </g></svg>
                 <div>
-                    <h1>
-                        HTML
-                    </h1>
+                    <abbr>
+                        <h1>
+                            HTML
+                        </h1>
+                        </abbr>
 <h3>HyperText <mark style="background-color: rgb(247, 140, 0);">Markup</mark> Language </h3>
                 </div>
                 
             </div>
             <div class="box_text">
-                <p>Role para baixo para saber mais</p>
-                <div>
+                <p class="p-desc_1">
+                    <q>
+                    <strong class="strong">HTML (Linguagem de Marcação de Hipertexto)  </strong>
+                 </q> é a linguagem base para criar o conteúdo e a estrutura das páginas web. É utilizada para definir elementos como parágrafos, cabeçalhos, imagens e links, indicando aos navegadores como exibir esses elementos .
+                
+                </p>
+<hr />
+                <p class="p-desc_2">
+                    &nbsp; Apesar de ser uma linguagem, O HTML <strong class="strong">
+não é uma linguagem de programação
+                    </strong>,mas sim uma linguagem de marcação, usada para definir a estrutura do seu conteúdo. HTML consiste de uma série de elementos, que você usa para delimitar ou agrupar diferentes partes do conteúdo para que ele apareça ou atue de determinada maneira. As tags anexas podem transformar uma palavra ou imagem num hiperlink, pode colocar palavras em itálico, pode aumentar ou diminuir a fonte e assim por diante. Em outras palavras, o HTML define o "esqueleto" de um site, enquanto outras tecnologias como CSS e JavaScript cuidam da aparência e da funcionalidade.</p>
+                </p>
+
+
+                <div class="more_roll">
+                    <a href="#titulos">
+                        <p>
+                        Role para baixo para saber mais
+                    </p>
                     <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#f0f0f0"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M7 10L12 15L17 10" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
-    
-                </div>
+
+                    </a>
+                 </div>
+              
             </div>
 
     </div>
+      </main>
+
+           <!-- SECTIONS (TAGS) -->
         <div class="box-texts">
-    <!--  BOX 1  -->
-    <div class="h-titles-tag" id="#titulos">
+
+    <!--  SECTION TITLES -->
+    <div class="h-titles-tag" id="titulos">
         <div class="intro-htags">
             <h1>
            <strong class="strong">Títulos</strong>  - h1 ao h6
@@ -65,7 +100,7 @@
         </p>
                 </div>
         <section class="htag-examples"> 
-            <u style="text-decoration: underline;">
+            <u style="text-decoration: none; ">
             <h3 class="ex-title">
                 EXEMPLOS DE TÍTULOS: 
                 
@@ -97,9 +132,10 @@
 
 
 </div>
-    <!--  BOX 2 -->
 
-<div class="h-titles-tag" id="#titulos">
+    <!--  SECTION - PARAGRAPHS, BLOQUOTES AND CITATIONS -->
+
+<div class="h-titles-tag" id="paragrafos">
   
       <div class="intro-htags">
           <h1>
@@ -110,7 +146,7 @@
         e em seguida,<strong class="strong"> a tag cite/></strong> para citar a origem da fonte.       </p>
               </div>
       <section class="htag-examples"> 
-          <u style="text-decoration: underline;">
+          <u style="text-decoration: none;">
           <h3 class="ex-title">
               EXEMPLOS DE PARÁGRAFOS E CITAÇÕES: 
               
@@ -129,9 +165,97 @@
                      <p>
                         Aqui vai uma citação de um texto famoso com a tag < /p> dentro de um < /blockquote>
                                       </p> 
-                                      <cite> - Marquinhos Zukemberg</cite>
+                                      <cite><i class="italic">
+                                          - Marquinhos Zukemberg
+                                                                           </i> 
+                                    </cite>
                       
                   </blockquote>
+              </div>
+<div>
+    <p>
+Um parágrafo normal com < p> <br>
+<small>E aqui um comentário, usando a tag < small>.</small>
+</p>
+
+
+</div>
+              
+          
+      </section>
+
+
+</div>
+
+
+
+    
+    <!--  SECTION - LISTS -->
+
+     <div class="h-titles-tag" id="paragrafos">
+  
+      <div class="intro-htags">
+          <h1>
+              <strong class="strong">Listas</strong> - <strong class="strong">
+                Ordernadas </strong>& <strong class="strong">Não Ordenadas
+               </strong>
+          </h1>
+     <p>O elemento HTML <strong class="strong">< ul> </strong>(ou elemento <abbr>HTML </abbr> de Lista desordenada) representa uma lista de itens
+        sem ordem rígida, isto é, uma coleção de itens que não trazem uma ordenação numérica e as suas posições,
+         nessa lista, são irrelevantes.   
+      Já o elemento HTML <strong class="strong">< ol> </strong> (ou Elemento HTML de lista ordenada) representa uma lista de itens ordenados. 
+              </div>
+      <section class="htag-examples"> 
+          <u style="text-decoration: none;">
+          <h3 class="ex-title">
+              EXEMPLOS DE LISTAS: 
+              
+          </h3>
+      </u>
+          
+              
+          <div >
+              <div> 
+                <h4>
+                    Lista Desordenada de Compras:
+                </h3>
+
+                <ul class="desordened-list"> 
+                    <li>
+                           Leite
+                    </li>
+                      <li>
+                           Ovos
+                    </li>
+                      <li>
+                           Farinha
+                    </li>
+                </ul>
+
+
+              </div>
+
+              <div> 
+                <h4>
+                    Lista Ordenada de Corredores:
+                </h3>
+
+                <ol class="ordened-list" >
+                    <li>
+                          Ferrari
+                    </li>
+                      <li>
+                           Skyline
+                    </li>
+                      <li>
+                           Golf
+                    </li>
+                </ol>
+
+                
+              </div>
+
+              
               </div>
               
           
@@ -140,24 +264,57 @@
 
 </div>
 
+    <!--  SECTION - TEXT FORMAT -->
+
+    <!--    
+        <div class="h-titles-tag" id="paragrafos">
+     
+         <div class="intro-htags">
+             <h1>
+                 <strong class="strong">Parágrafos </strong>& <strong class="strong">Citações</strong>
+             </h1>
+        <p>Um ótimo exemplo de um parágrafo sendo declarado em html   <strong class="strong">é exatamente este aqui.</strong>
+          Porém, quando alguma fonte externa é citada neste parágrafo, <strong class="strong">devemos utilizar a tag bloquote/></strong>
+           e em seguida,<strong class="strong"> a tag cite/></strong> para citar a origem da fonte.       </p>
+                 </div>
+         <section class="htag-examples"> 
+             <u style="text-decoration: none;">
+             <h3 class="ex-title">
+                 EXEMPLOS DE PARÁGRAFOS E CITAÇÕES: 
+                 
+             </h3>
+         </u>
+             
+                 
+             <div >
+                 <div>
+                     <p>
+                         Este é parágrafo é com a tag   < /p>
+                     </p>
+                 </div>
+                 <div>
+                     <blockquote style="margin: 10px;">
+                        <p>
+                           Aqui vai uma citação de um texto famoso com a tag < /p> dentro de um < /blockquote>
+                                         </p> 
+                                         <cite> - Marquinhos Zukemberg</cite>
+                         
+                     </blockquote>
+                 </div>
+                 
+             
+         </section>
+    
+    
     </div>
+    
+    -->
 
     
-    <!--  BOX 3  -->
-
-     <div class="list-tag" id="#paragrafos">
-        <p>
-          
-        </p>
-        
     </div>
-    
-    <!--  BOX 1  -->
-      
-    <!--  BOX 1  -->
                 </div>
 
-    </main>
+  
 
     
 </body>
