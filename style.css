@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+
+}
+*:visited {
+    color: white;
+}
+
+body {
+    background-color: rgb(66, 66, 66);
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    box-shadow: 1px 0px 5px 0.2px rgba(0, 0, 0, 0.61);
+    width: 100%;
+    background-color: rgb(48, 48, 48);
+    font-weight: 700;
+}
+
+header span {
+    color: rgb(247, 140, 0);
+    font-weight: 700;
+}
+.nav-titles {
+    color: white;
+    width: 100%;
+    display: flex;
+  justify-content: space-around;
+}
+
+.nav-titles ul {
+    list-style: none;
+    display: flex;
+    padding: 5px;
+    gap: 15px;
+}
+
+a:visited {
+    color: white;
+}
+
+.nav-titles ul li a:focus {
+color: rgb(201, 201, 201);   
+}
+
+.box_image_and_text {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+}
+.box_image_and_text svg {
+    width: 150px;
+    max-width: 150px;
+}
+.box_image_and_text h1 {
+    width: 100%;
+    font-size: 5.2em;
+    font-weight: 800;
+    margin: 0px;
+}
+.box_image_and_text h3 {
+    margin: 0px ;
+}
+.box_text {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+     margin-top: 30px;
+    
+}
+
+.box_text p{
+   
+    width: fit-content;
+}
+
+.html-svg {
+ 
+    height: 20%;
+
+}
+.box-texts, .intro {
+    margin-top:     10px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+       
+}
+.intro {
+    min-height: 90vh;
+    display: flex;
+   justify-content: space-evenly;
+}
+
+.h-titles-tag {
+    background-color: rgb(109, 109, 109);
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+width: 60%;
+border-radius: 20px;
+ padding: 10px 10px;
+
+ 
+ 
+}
+
+.intro-htags {
+    width: 50%;
+        padding: 10px;
+}
+.intro-htags h1 {
+    max-width: fit-content;
+}
+.intro-htags p {
+width: 80%;
+font-size: .8em;
+}
+.intro-htags p {
+    color: rgb(226, 226, 226);
+    width: 80%;
+}
+.htag-examples {
+    padding: 10px;
+    width: 30%;
+    color: white;
+}
+.htag-examples p {
+    font-size: .8em;
+    font-weight: 300;
+}
+
+.ex-title {
+    color: black;
+    font-weight: 500;
+}
+
+.strong {
+    font-weight: 600;
+}
